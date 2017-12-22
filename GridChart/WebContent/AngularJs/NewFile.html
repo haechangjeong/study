@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<body>
+
+	<div ng-app="myApp">
+	
+		<div ng-controller="mainCtrl">
+		
+			<p>{{ text}}</p>
+			<p>{{text2}}</p>
+		
+		</div> 
+		<!-- 
+	 	<div ng-controller="UserCtrl">
+		{{a}}
+		{{b}}
+		</div>
+		 --> 
+	
+	</div>
+
+	 <script>
+		var app = angular.module("myApp", []);
+		
+		app.controller("mainCtrl",function($scope) {
+		    $scope.text = "Hello";
+		    $scope.text2 = "Hi";
+		});
+		
+	 /* 	
+	 	var app2= angular.module("myApp",[]);
+		
+		app2.controller("UserCtrl",function($scope){
+			$scope.a = "user name";
+			$scope.b = "user id";
+
+		}); 
+	*/
+	</script>
+
+</body>
+</html>
